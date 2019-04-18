@@ -1,0 +1,51 @@
+.container{
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+}
+.title{
+}
+.body{
+    display:flex;
+    justify-content:space-around;
+    flex-direction:row;
+}
+.tail{
+}
+h1{
+    color:skyblue;
+}
+
+button{
+    border: solid black 5px ;
+    
+}
+
+h2{
+    color:navy;
+}
+body{
+    background-color:purple;
+}
+img{
+    width:100px;
+    display:flex;
+    justify-content:flex-start;
+}
+.stuff{
+    display:flex;
+    justify-content:space-around;
+    flex-direction:row;
+}
+p{
+    color:white;
+    display:flex;
+    justify-content:flex-end;
+}
+#classic{
+    display:flex;
+    justify-content:flex-start;
+}
+h3{
+    color:white;
+}
