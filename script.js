@@ -1,8 +1,11 @@
-var image = [];
+var images = [];
 var names = [];
 var prices = [];
+var totalPrice;
 
 jQuery('.add').click(function() {
+    
+    totalPrice=0;
     
     var imgItem=$(".productImg").val();
     
@@ -10,9 +13,7 @@ jQuery('.add').click(function() {
     
     var priceItem=parseInt($(".productPrice").val());
     
-    var totalVal=parseInt($(".productPrice").val());
-    
-   $(".span2").text(totalVal);
+    images.push(imgItem);
    
     names.push(nameItem);
     
@@ -20,10 +21,15 @@ jQuery('.add').click(function() {
     
     $(".stuff").append("<div> <img src= " +imgItem + "> <p>" +nameItem + "</p> <p>$" +priceItem + "</p> </div>");
     
-    prices.forEach(function(price){});
-   //var solution=totalVal;
+    prices.forEach(function(price){
+        totalPrice=totalPrice+parseInt(price);
+        });
+    $(".span2").text(totalPrice);
+    
+    
 });
 jQuery('.purchase').click(function(){
-    //var solution=totalVal;
-   //$("span").text(solution);
+   
+   alert ("Are You Sure You Want To Finish?");
+   
 });
